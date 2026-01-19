@@ -1,0 +1,2 @@
+cord19_project/data/processed/cord19_compressed.parquet filter=lfs diff=lfs merge=lfs -text
+cord19_project/data/raw/metadata.csv filter=lfs diff=lfs merge=lfs -text
