@@ -1,3 +1,20 @@
+# Dashboard framework
+streamlit>=1.29.0
+
+# Data processing
+polars>=0.20.0
+
+# Visualization
+plotly>=5.18.0
+
+# Data handling
+pandas>=2.0.0
+
+# Already from previous steps
+pyarrow>=14.0.0
+
+
+
 polars>=0.20.0
 boto3>=1.34.0
 botocore>=1.34.0
