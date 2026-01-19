@@ -1,0 +1,17 @@
+# CORD-19 Drug Dashboard Dependencies
+# Install with: pip install -r requirements_dashboard.txt
+
+# Dashboard framework
+streamlit>=1.29.0
+
+# Data processing
+polars>=0.20.0
+
+# Visualization
+plotly>=5.18.0
+
+# Data handling
+pandas>=2.0.0
+
+# Already from previous steps
+pyarrow>=14.0.0

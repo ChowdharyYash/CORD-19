@@ -1,0 +1,11 @@
+# CORD-19 EDA Dependencies
+# Install with: pip install -r requirements_eda.txt
+
+# Data Processing
+polars>=0.20.0
+
+# Visualization
+plotly>=5.18.0
+
+# Already installed from Part 1
+pyarrow>=14.0.0

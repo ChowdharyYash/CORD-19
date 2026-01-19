@@ -1,0 +1,111 @@
+"""
+KPI_EXPLANATION.txt - Business Intelligence KPI Logic
+=====================================================
+
+This document explains the logic behind each KPI calculated
+in the CORD-19 EDA analysis.
+
+=====================================================
+1. TEMPORAL KPIs
+=====================================================
+
+TOTAL PAPERS
+  - Logic: Count of unique cord_uid values
+  - Business Use: Dataset size indicator
+
+PEAK YEAR / PEAK MONTH
+  - Logic: Year/Month with highest publication count
+  - Business Use: Identifies when research activity was highest
+  - Expected: 2020-2021 (COVID-19 peak)
+
+YEAR-OVER-YEAR (YoY) GROWTH
+  - Logic: (Current Year - Previous Year) / Previous Year * 100
+  - Business Use: Measures research momentum
+  - Interpretation: 
+    * Positive = Growing research interest
+    * Negative = Declining (post-pandemic normalization)
+
+MONTHLY PUBLICATION RATE
+  - Logic: Papers published per calendar month
+  - Business Use: Granular trend analysis
+  - Visualization: Line chart shows acceleration/deceleration
+
+=====================================================
+2. JOURNAL KPIs  
+=====================================================
+
+UNIQUE JOURNALS
+  - Logic: Count of distinct journal names
+  - Business Use: Measures research diversity
+
+TOP JOURNAL SHARE
+  - Logic: Papers from #1 journal / Total papers * 100
+  - Business Use: Identifies dominant publication venues
+
+TOP 10 CONCENTRATION
+  - Logic: Papers from Top 10 journals / Total * 100
+  - Business Use: Market concentration metric
+  - Interpretation:
+    * High (>50%) = Research concentrated in few journals
+    * Low (<20%) = Highly distributed research
+
+JOURNAL DIVERSITY INDEX
+  - Logic: Unique Journals / Total Papers
+  - Business Use: Alternative diversity measure
+
+=====================================================
+3. RESEARCH TREND KPIs
+=====================================================
+
+These KPIs track specific research themes over time.
+Each uses keyword matching in abstracts.
+
+VACCINE RESEARCH %
+  - Keywords: vaccine, vaccination, immunization, mrna, antibody, booster
+  - Logic: Papers with keyword / Total * 100
+  - Business Use: Track vaccine development focus
+  - Expected Trend: Sharp rise in 2020-2021
+
+TREATMENT & THERAPEUTICS %
+  - Keywords: treatment, therapy, drug, antiviral, remdesivir, plasma
+  - Logic: Same as above
+  - Business Use: Track therapeutic research
+  - Expected Trend: Early pandemic focus
+
+EPIDEMIOLOGY & TRANSMISSION %
+  - Keywords: transmission, spread, R0, quarantine, lockdown, tracing
+  - Logic: Same as above  
+  - Business Use: Track public health research
+  - Expected Trend: Very early pandemic focus
+
+=====================================================
+4. HOW TO USE THESE KPIs
+=====================================================
+
+FOR RESEARCHERS:
+  - Identify trending research areas
+  - Find top journals for submission
+  - Track field evolution over time
+
+FOR POLICY MAKERS:
+  - Monitor research investment outcomes
+  - Identify knowledge gaps
+  - Track international research contribution
+
+FOR DATA SCIENTISTS:
+  - Baseline for NLP/ML projects
+  - Training data quality assessment
+  - Temporal validation for models
+
+=====================================================
+5. LIMITATIONS
+=====================================================
+
+- Keyword matching is approximate (not semantic)
+- Some papers may match multiple trends
+- "No Data" abstracts are excluded from text analysis
+- Journal names may have slight variations
+- Date parsing handles known formats only
+
+=====================================================
+"""
