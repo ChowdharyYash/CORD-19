@@ -13,8 +13,14 @@ from drug_dictionary import DRUG_EFFICACY_MAP, get_all_drugs, get_all_efficacies
 # =============================================================================
 # CONFIGURATION
 # =============================================================================
-DATA_FILE = Path("data/processed/cord19_compressed.parquet")
-CACHE_FILE = Path("data/processed/drug_mentions_cache.pkl")
+
+BASE_DIR = Path(__file__).resolve().parent
+DATA_FILE = BASE_DIR / "data/processed/cord19_compressed.parquet"
+CACHE_FILE = BASE_DIR / "data/processed/drug_mentions_cache.pkl"
+
+# Local File path used 
+# DATA_FILE = Path("data/processed/cord19_compressed.parquet")
+# CACHE_FILE = Path("data/processed/drug_mentions_cache.pkl")
 
 # =============================================================================
 # DRUG MENTION EXTRACTOR
