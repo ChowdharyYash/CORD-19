@@ -392,16 +392,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Citation
 
-If you use this project in your research, please cite:
-
-```bibtex
-@software{cord19_analysis,
-  author = {Your Name},
-  title = {CORD-19 Research Paper Analysis Pipeline},
-  year = {2024},
-  url = {https://github.com/yourusername/cord19-analysis}
-}
-```
+If you use this project in your research, please cite. 
 
 ---
 
